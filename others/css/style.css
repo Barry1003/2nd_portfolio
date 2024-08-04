@@ -255,11 +255,14 @@ ul{
     display: flex;
     color: var(--text-black-900);
 }
-.home  .home-img img{
+.home .home-img{
+    display:flex;
     height: 400px;
     margin: auto;
     border-radius: 10px;
-
+}
+.home  .home-img img{
+    object-fit:contain;
 }
 .home  .home-info{
     flex: 0 0 60%;
@@ -308,8 +311,8 @@ h3.my-profession{
     position: absolute;
     height: 80px;
     width: 80px;
-    right: 10px;
-    bottom:  -20px;
+    right: -13px;
+    bottom:  -13px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
 }
@@ -319,8 +322,8 @@ h3.my-profession{
     position: absolute;
     height: 80px;
     width: 80px;
-    left: 10px;
-    top:  -18px;
+    left: -13px;
+    top:  -13px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
 }
@@ -388,14 +391,33 @@ h3{
 }
 .about .about-content .about-text p{
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 300;
     line-height: 25px;
     color: var(--text-black-700);
 }
-
+.rr{
+    gap: 1rem7;
+}
+.certificate{
+    display: flex;
+    align-items:center;
+     width:100%;
+     justify:space-between; 
+}
+.certificate p{
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left:2rem ;
+}
+.certificate img{
+    width: 41px;
+}
 .about .about-content .personal-info{
-    flex: 0 0 60%;
+    flex: 0 0 70%;
     max-width: 50% ;
+    gap: 5;
     margin-top: 40px;
     padding-left: 20px;
 }
